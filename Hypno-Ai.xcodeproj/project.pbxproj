@@ -11,6 +11,8 @@
 		8D5D25C029DC231D00068031 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D25BF29DC231D00068031 /* ContentView.swift */; };
 		8D5D25C229DC231F00068031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D25C129DC231F00068031 /* Assets.xcassets */; };
 		8D5D25C629DC231F00068031 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D25C529DC231F00068031 /* Preview Assets.xcassets */; };
+		8D5D25CD29DC5BAD00068031 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D25CC29DC5BAD00068031 /* ImagePicker.swift */; };
+		8D5D25CF29DC5BE800068031 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D25CE29DC5BE800068031 /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		8D5D25C129DC231F00068031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D5D25C329DC231F00068031 /* Hypno_Ai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hypno_Ai.entitlements; sourceTree = "<group>"; };
 		8D5D25C529DC231F00068031 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D5D25CC29DC5BAD00068031 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8D5D25CE29DC5BE800068031 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				8D5D25BD29DC231D00068031 /* Hypno_AiApp.swift */,
+				8D5D25CE29DC5BE800068031 /* ImageSaver.swift */,
 				8D5D25BF29DC231D00068031 /* ContentView.swift */,
 				8D5D25C129DC231F00068031 /* Assets.xcassets */,
 				8D5D25C329DC231F00068031 /* Hypno_Ai.entitlements */,
 				8D5D25C429DC231F00068031 /* Preview Content */,
+				8D5D25CC29DC5BAD00068031 /* ImagePicker.swift */,
 			);
 			path = "Hypno-Ai";
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5D25CD29DC5BAD00068031 /* ImagePicker.swift in Sources */,
 				8D5D25C029DC231D00068031 /* ContentView.swift in Sources */,
 				8D5D25BE29DC231D00068031 /* Hypno_AiApp.swift in Sources */,
+				8D5D25CF29DC5BE800068031 /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +277,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Need to access photos for saving data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +316,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Need to access photos for saving data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
